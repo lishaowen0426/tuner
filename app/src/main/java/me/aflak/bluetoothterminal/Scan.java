@@ -17,9 +17,7 @@ import java.util.List;
 
 import me.aflak.bluetooth.Bluetooth;
 
-/**
- * Created by Omar on 08/05/2016.
- */
+
 public class Scan extends Activity implements Bluetooth.DiscoveryCallback, AdapterView.OnItemClickListener{
     private Bluetooth bluetooth;
     private ListView listView;

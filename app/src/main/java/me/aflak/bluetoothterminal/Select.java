@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,9 +22,7 @@ import java.util.List;
 import me.aflak.bluetooth.Bluetooth;
 import me.aflak.pulltorefresh.PullToRefresh;
 
-/**
- * Created by Omar on 16/07/2015.
- */
+
 public class Select extends Activity implements PullToRefresh.OnRefreshListener {
     private Bluetooth bt;
     private ListView listView;
@@ -36,6 +35,15 @@ public class Select extends Activity implements PullToRefresh.OnRefreshListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select);
+
+        //set background color
+        //View someView = findViewById(R.id.text);
+        //View root = someView.getRootView();
+
+        //root.setBackgroundColor(0xFF00FF00);
+        //background color end
+
+
 
         IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
         registerReceiver(mReceiver, filter);
