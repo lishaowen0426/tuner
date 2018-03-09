@@ -34,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Scan again"
+        android:background="@drawable/button_color"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/scan_state" />
 
